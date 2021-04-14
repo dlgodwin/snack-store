@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.809.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnackStore.Domain", "SnackStore.Domain\SnackStore.Domain.csproj", "{278C95FF-D0FA-420A-A3D9-250F27F309B0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnackStore.Api", "SnackStore.Api\SnackStore.Api.csproj", "{96923036-7B31-42F9-A266-EBB35886B10C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnackStore.Services", "SnackStore.Services\SnackStore.Services.csproj", "{320DAB23-329A-4D3C-A7BE-07EE65DFAA1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{278C95FF-D0FA-420A-A3D9-250F27F309B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{278C95FF-D0FA-420A-A3D9-250F27F309B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{278C95FF-D0FA-420A-A3D9-250F27F309B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96923036-7B31-42F9-A266-EBB35886B10C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96923036-7B31-42F9-A266-EBB35886B10C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96923036-7B31-42F9-A266-EBB35886B10C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96923036-7B31-42F9-A266-EBB35886B10C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{320DAB23-329A-4D3C-A7BE-07EE65DFAA1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{320DAB23-329A-4D3C-A7BE-07EE65DFAA1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{320DAB23-329A-4D3C-A7BE-07EE65DFAA1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{320DAB23-329A-4D3C-A7BE-07EE65DFAA1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

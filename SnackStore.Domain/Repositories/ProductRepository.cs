@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using SnackStore.Domain.Contexts;
 using SnackStore.Domain.Model;
 
 namespace SnackStore.Domain.Repositories
 {
-    public class ProductRepository
+    public class ProductRepository : IProductRepository
     {
         private readonly ISnackStoreContext _context;
 
@@ -15,9 +17,9 @@ namespace SnackStore.Domain.Repositories
             _context = context;
         }
 
-        public IEnumerable<Product> GetAllProducts()
+        public async Task<IEnumerable<Product>> GetAllProducts()
         {
-            return _context.Products;
+            return await _context.Products.ToListAsync();
         }
     }
 }
