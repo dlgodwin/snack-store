@@ -15,5 +15,8 @@
     <ProjectReference Include="..\SnackStore.Services\SnackStore.Services.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+    <ProjectReference Include="..\SnackStore.Shared\SnackStore.Shared.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>

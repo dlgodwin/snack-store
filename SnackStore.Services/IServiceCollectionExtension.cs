@@ -10,6 +10,7 @@ namespace SnackStore.Services
         public static IServiceCollection AddRepositories(this IServiceCollection services)
         {
             services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddTransient<ICategoryRepository, CategoryRepository>();
             services.AddTransient<ISnackStoreContext, SnackStoreContext>();
             return services;
         }

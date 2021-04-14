@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using SnackStore.Domain.Contexts;
 using SnackStore.Domain.Model;
 
 namespace SnackStore.Domain.Repositories
 {
-    public class CategoryRepository
+    public class CategoryRepository : ICategoryRepository
     {
         private readonly ISnackStoreContext _context;
 
@@ -14,9 +16,9 @@ namespace SnackStore.Domain.Repositories
             _context = context;
         }
 
-        public IEnumerable<Category> GetAllCategories()
+        public async Task<IEnumerable<Category>> GetAllCategories()
         {
-            return _context.Categories;
+            return await _context.Categories.ToListAsync();
         }
     }
 }

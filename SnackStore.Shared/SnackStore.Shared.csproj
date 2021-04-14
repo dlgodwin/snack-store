@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SnackStore.Domain\SnackStore.Domain.csproj" />
-    <ProjectReference Include="..\SnackStore.Shared\SnackStore.Shared.csproj" />
+    <Folder Include="DTO\" />
   </ItemGroup>
 </Project>

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SnackStore.Domain.Model;
 using SnackStore.Services;
+using SnackStore.Shared.DTO;
 
 namespace SnackStore.Api.Controllers
 {
@@ -19,12 +20,18 @@ namespace SnackStore.Api.Controllers
             _productService = productService;
         }
 
+        //[HttpGet]
+        //public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
+        //{
+        //    var products = await _productService.GetAllProducts();
+        //    return Ok(products);
+        //}
+
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
+        public async Task<ActionResult<IEnumerable<CategorizedProductDto>>> GetCategorizedProducts()
         {
-            var products = await _productService.GetAllProducts();
+            var products = await _productService.GetCategorizedProducts();
             return Ok(products);
         }
-
     }
 }
